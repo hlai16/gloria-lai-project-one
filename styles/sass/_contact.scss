@@ -1,0 +1,7 @@
+@import "variables";
+@import "mixins";
+
+.contact_header {
+    @include hero_image;
+    background-image: url(../assets/contact-1.jpeg);
+}

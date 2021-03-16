@@ -1,0 +1,13 @@
+// wrapper
+@mixin wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// hero image
+@mixin hero_image($vh: 50vh) {
+    background-color: $white;
+    background-size: cover;
+    height: $vh;
+    background-position: center center;
+}

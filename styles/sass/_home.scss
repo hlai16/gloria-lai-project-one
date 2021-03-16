@@ -1,0 +1,7 @@
+@import "variables";
+@import "mixins";
+
+.home_header {
+    @include hero_image(75vh);
+    background-image: url(../assets/home-1.jpeg);
+}

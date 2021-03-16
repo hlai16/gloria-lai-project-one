@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'mixins';
+
+
+// Portrait tablet and small desktops
+@media (max-width: 940px) {
+    // header
+    .hamburger {
+        visibility: visible;
+    }
+    nav ul{
+        visibility: hidden;
+    }
+}

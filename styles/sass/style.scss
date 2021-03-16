@@ -1,0 +1,13 @@
+@import 'setup';
+@import 'variables';
+@import 'mixins';
+@import 'media';
+@import 'header';
+@import 'home';
+@import 'blog';
+@import 'contact';
+@import 'footer';
+
+html{
+    font-size: 62.5%;
+}
