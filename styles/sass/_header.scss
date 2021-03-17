@@ -3,7 +3,6 @@
 
 
 header .wrapper {
-  @include wrapper;
   display: flex;
   justify-content: space-between;
   h1 {
@@ -11,7 +10,7 @@ header .wrapper {
     font-size: 46px;
     line-height: 24px;
     letter-spacing: 1.1px;
-    color: $black;
+    color: #000;
     margin: 2rem;
   }
   nav .hamburger {
@@ -26,11 +25,8 @@ header .wrapper {
       a {
         text-decoration: none;
         margin: 0 1.25rem;
-        font-family: $heading_font;
-        font-size: 16px;
-        line-height: 36px;
-        letter-spacing: 0.5px;
-        color: $black;
+        @include subheading(15px);
+        color: #000;
       }
       a:hover,
       a:active,
@@ -42,11 +38,5 @@ header .wrapper {
 }
 
 
-.blog_header {
-    @include hero_image;
-    background-image: url(../assets/blog-1.jpeg);
-}
-.contact_header {
-    @include hero_image;
-    background-image: url(../assets/contact-1.jpeg);
-}
+
+

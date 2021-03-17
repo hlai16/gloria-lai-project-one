@@ -1,12 +1,45 @@
-// wrapper
-@mixin wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+
+// Font mixins:
+@mixin subheading($subheading_size: 18px, $subheading_lh: 36px) {
+    font-family: $heading_font;
+    font-size: $subheading_size;
+    line-height: $subheading_lh;
+    letter-spacing: 0.5px;
+}
+
+@mixin p_font($p_size: 14px, $p_lh: 24px) {
+    font-family: $p_font;
+    text-align: center;
+    font-size: $p_size;
+    line-height: $p_lh;
+    letter-spacing: 0.3px;
+}
+
+// Green Accent Line
+@mixin green_accent {
+    width: 10%;
+    height: 0.75%;
+    background-color: $deep_green;
+    color: transparent;
+    margin: auto 45%;
+}
+
+// Button
+@mixin button {
+    background-color: $deep_green;
+    color: #fff;
+    border: none;
+    padding: 1rem 3rem;
+    font-family: $heading_font;
+}
+@mixin button_hover {
+    background-color: $green;
+    color: #000;
 }
 
 // hero image
 @mixin hero_image($vh: 50vh) {
-    background-color: $white;
+    background-color: $green;
     background-size: cover;
     height: $vh;
     background-position: center center;

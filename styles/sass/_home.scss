@@ -1,7 +1,59 @@
 @import "variables";
 @import "mixins";
 
+// Header
 .home_header {
     @include hero_image(75vh);
     background-image: url(../assets/home-1.jpeg);
+}
+
+// Main
+.home_main .wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .m_p_e{
+        text-align: center;
+        padding: 10rem 6rem;
+        h2{
+            @include subheading;
+        }
+        .green_accent {
+            @include green_accent;
+        }
+        p {
+            @include p_font;
+            margin: 3.5rem auto;
+        }
+        button {
+            @include button;
+        }
+        button:hover,
+        button:focus-within {
+            @include button_hover;
+        }
+    }
+    .menu {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 2.5rem 5rem;
+        margin: 8.5rem 6rem;
+        padding-right: 5rem;
+        .menu_div {
+            display: grid;
+            grid-template-columns: 10% 88%;
+            grid-gap: 2rem;
+            span {
+                font-size: 30px;
+            }
+            .menu_text{
+                margin-top: -2rem;
+                h3{
+                    @include subheading(15px, 14px);
+                }
+                p{
+                    @include p_font(12px, 18px);
+                }
+            }
+        }
+    }
 }

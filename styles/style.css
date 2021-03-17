@@ -209,11 +209,36 @@ template {
   nav ul {
     visibility: hidden;
   }
+  .home_main .wrapper {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-gap: 0;
+  }
+  .home_main .wrapper .veggie,
+  .home_main .wrapper .taco,
+  .home_main .wrapper .m_p_e,
+  .home_main .wrapper .menu {
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-gap: 0;
+  }
+  .vegetarian,
+  .appetizers,
+  .desserts,
+  .drinks,
+  .side_dishes,
+  .salads {
+    grid-column: 1/-1;
+  }
 }
 
 header .wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,7 +252,7 @@ header .wrapper h1 {
   font-size: 46px;
   line-height: 24px;
   letter-spacing: 1.1px;
-  color: #2E2E2E;
+  color: #000;
   margin: 2rem;
 }
 
@@ -253,10 +278,10 @@ header .wrapper ul li a {
   text-decoration: none;
   margin: 0 1.25rem;
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 36px;
   letter-spacing: 0.5px;
-  color: #2E2E2E;
+  color: #000;
 }
 
 header .wrapper ul li a:hover,
@@ -265,32 +290,107 @@ header .wrapper ul li a:focus-within {
   color: #64A604;
 }
 
-.blog_header {
-  background-color: #F6F6F6;
-  background-size: cover;
-  height: 50vh;
-  background-position: center center;
-  background-image: url(../assets/blog-1.jpeg);
-}
-
-.contact_header {
-  background-color: #F6F6F6;
-  background-size: cover;
-  height: 50vh;
-  background-position: center center;
-  background-image: url(../assets/contact-1.jpeg);
-}
-
 .home_header {
-  background-color: #F6F6F6;
+  background-color: #DDED9A;
   background-size: cover;
   height: 75vh;
   background-position: center center;
   background-image: url(../assets/home-1.jpeg);
 }
 
+.home_main .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.home_main .wrapper .m_p_e {
+  text-align: center;
+  padding: 10rem 6rem;
+}
+
+.home_main .wrapper .m_p_e h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+
+.home_main .wrapper .m_p_e .green_accent {
+  width: 10%;
+  height: 0.75%;
+  background-color: #64A604;
+  color: transparent;
+  margin: auto 45%;
+}
+
+.home_main .wrapper .m_p_e p {
+  font-family: "Lora", serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin: 3.5rem auto;
+}
+
+.home_main .wrapper .m_p_e button {
+  background-color: #64A604;
+  color: #fff;
+  border: none;
+  padding: 1rem 3rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.home_main .wrapper .m_p_e button:hover,
+.home_main .wrapper .m_p_e button:focus-within {
+  background-color: #DDED9A;
+  color: #000;
+}
+
+.home_main .wrapper .menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-gap: 2.5rem 5rem;
+  margin: 8.5rem 6rem;
+  padding-right: 5rem;
+}
+
+.home_main .wrapper .menu .menu_div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 88%;
+      grid-template-columns: 10% 88%;
+  grid-gap: 2rem;
+}
+
+.home_main .wrapper .menu .menu_div span {
+  font-size: 30px;
+}
+
+.home_main .wrapper .menu .menu_div .menu_text {
+  margin-top: -2rem;
+}
+
+.home_main .wrapper .menu .menu_div .menu_text h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+}
+
+.home_main .wrapper .menu .menu_div .menu_text p {
+  font-family: "Lora", serif;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+}
+
 .blog_header {
-  background-color: #F6F6F6;
+  background-color: #DDED9A;
   background-size: cover;
   height: 50vh;
   background-position: center center;
@@ -298,7 +398,7 @@ header .wrapper ul li a:focus-within {
 }
 
 .contact_header {
-  background-color: #F6F6F6;
+  background-color: #DDED9A;
   background-size: cover;
   height: 50vh;
   background-position: center center;
@@ -307,4 +407,13 @@ header .wrapper ul li a:focus-within {
 
 html {
   font-size: 62.5%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
 }

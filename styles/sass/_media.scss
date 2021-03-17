@@ -11,4 +11,33 @@
     nav ul{
         visibility: hidden;
     }
+    // Home Main
+    .home_main .wrapper{
+        grid-template-columns: 100%;
+        grid-gap: 0;
+        .veggie,
+        .taco,
+        .m_p_e,
+        .menu {
+            grid-column: 1/-1;
+        }
+    }
+}
+
+// Landscape phones and down
+@media (max-width: 480px) {
+    // Home Main
+    .menu {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+    .vegetarian,
+    .appetizers,
+    .desserts,
+    .drinks,
+    .side_dishes,
+    .salads {
+        grid-column: 1/-1;
+    }
+
 }
