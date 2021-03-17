@@ -35,6 +35,10 @@
             }
         }
     }
+    // Gallery section
+    .gallery .wrapper {
+        margin-top: 15rem;
+    }
 }
 
 // Landscape phones and down
@@ -52,5 +56,13 @@
     .salads {
         grid-column: 1/-1;
     }
-
+    // Gallery section 
+    .no_display {
+        display: none;
+    }
+    .photo1,
+    .photo2,
+    .photo3 {
+        grid-column: 1/-1;
+    }
 }

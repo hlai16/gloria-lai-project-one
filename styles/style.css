@@ -236,6 +236,9 @@ template {
   .our_restaurant .wrapper .restaurant_img p {
     width: 90%;
   }
+  .gallery .wrapper {
+    margin-top: 15rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -250,6 +253,14 @@ template {
   .drinks,
   .side_dishes,
   .salads {
+    grid-column: 1/-1;
+  }
+  .no_display {
+    display: none;
+  }
+  .photo1,
+  .photo2,
+  .photo3 {
     grid-column: 1/-1;
   }
 }
@@ -460,6 +471,13 @@ header .wrapper ul li a:focus-within {
   line-height: 24px;
   letter-spacing: 0.3px;
   width: 66%;
+}
+
+.gallery .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .blog_header {
