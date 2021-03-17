@@ -41,7 +41,14 @@
     }
 }
 
-// Landscape phones and down
+// landscape view from 940px to less
+@media (max-width: 940px) and (orientation: landscape) {
+    // Hungry Clients section
+    .close_quotation {
+        padding-top: 16rem;
+    }
+}
+// portrait size from 480px less
 @media (max-width: 480px) {
     // Home Main
     .menu {
@@ -64,5 +71,10 @@
     .photo2,
     .photo3 {
         grid-column: 1/-1;
+    }
+
+    // Hungry Clients section
+    .hungry_textbox {
+        margin: auto -15rem;
     }
 }

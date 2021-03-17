@@ -202,69 +202,6 @@ template {
   display: none;
 }
 
-@media (max-width: 940px) {
-  .hamburger {
-    visibility: visible;
-  }
-  nav ul {
-    visibility: hidden;
-  }
-  .home_main .wrapper {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    grid-gap: 0;
-  }
-  .home_main .wrapper .veggie,
-  .home_main .wrapper .taco,
-  .home_main .wrapper .m_p_e,
-  .home_main .wrapper .menu {
-    grid-column: 1/-1;
-  }
-  .our_restaurant .wrapper {
-    background-image: url(../assets/home-circle-text.png);
-    background-position: 50% 100%;
-    background-size: 10%;
-    background-repeat: no-repeat;
-    margin: auto -15rem;
-  }
-  .our_restaurant .wrapper .restaurant_img {
-    width: 100%;
-  }
-  .our_restaurant .wrapper .restaurant_img .circle_text {
-    display: none;
-  }
-  .our_restaurant .wrapper .restaurant_img p {
-    width: 90%;
-  }
-  .gallery .wrapper {
-    margin-top: 15rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .menu {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    grid-gap: 0;
-  }
-  .vegetarian,
-  .appetizers,
-  .desserts,
-  .drinks,
-  .side_dishes,
-  .salads {
-    grid-column: 1/-1;
-  }
-  .no_display {
-    display: none;
-  }
-  .photo1,
-  .photo2,
-  .photo3 {
-    grid-column: 1/-1;
-  }
-}
-
 header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,7 +286,7 @@ header .wrapper ul li a:focus-within {
   height: 5px;
   background-color: #64A604;
   color: transparent;
-  margin: auto 45%;
+  margin: auto;
 }
 
 .home_main .wrapper .m_p_e p {
@@ -460,7 +397,7 @@ header .wrapper ul li a:focus-within {
   height: 5px;
   background-color: #64A604;
   color: transparent;
-  margin: auto 45%;
+  margin: auto;
   margin-bottom: 5rem;
 }
 
@@ -480,6 +417,75 @@ header .wrapper ul li a:focus-within {
       grid-template-columns: repeat(3, 1fr);
 }
 
+.hungry_clients .wrapper {
+  background-color: #DDED9A;
+  margin-top: -2rem;
+  text-align: center;
+}
+
+.hungry_clients .wrapper .hungry_textbox {
+  padding: 10rem;
+}
+
+.hungry_clients .wrapper .hungry_textbox h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+
+.hungry_clients .wrapper .hungry_textbox .green_accent {
+  width: 60px;
+  height: 3px;
+  background-color: #64A604;
+  color: transparent;
+  margin: auto;
+}
+
+.hungry_clients .wrapper .hungry_textbox .quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: 5rem auto;
+}
+
+.hungry_clients .wrapper .hungry_textbox .quote p {
+  font-family: "Lora", serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-style: italic;
+  margin: auto 2rem;
+}
+
+.hungry_clients .wrapper .hungry_textbox .quote .quotations {
+  color: #F6F6F6;
+  font-size: 40px;
+}
+
+.hungry_clients .wrapper .hungry_textbox .quote .close_quotation {
+  margin-top: calc(40vh - 40%);
+}
+
+.hungry_clients .wrapper .hungry_textbox .arrows {
+  font-size: 20px;
+  letter-spacing: 1rem;
+  margin-left: 1rem;
+}
+
+.hungry_clients .wrapper .hungry_textbox .arrows a {
+  color: #F6F6F6;
+}
+
+.hungry_clients .wrapper .hungry_textbox .arrows a:hover,
+.hungry_clients .wrapper .hungry_textbox .arrows a:active,
+.hungry_clients .wrapper .hungry_textbox .arrows a:focus-within,
+.hungry_clients .wrapper .hungry_textbox .arrows a:focus-visible {
+  color: #fff;
+}
+
 .blog_header {
   background-color: #DDED9A;
   background-size: cover;
@@ -494,6 +500,78 @@ header .wrapper ul li a:focus-within {
   height: 50vh;
   background-position: center center;
   background-image: url(../assets/contact-1.jpeg);
+}
+
+@media (max-width: 940px) {
+  .hamburger {
+    visibility: visible;
+  }
+  nav ul {
+    visibility: hidden;
+  }
+  .home_main .wrapper {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-gap: 0;
+  }
+  .home_main .wrapper .veggie,
+  .home_main .wrapper .taco,
+  .home_main .wrapper .m_p_e,
+  .home_main .wrapper .menu {
+    grid-column: 1/-1;
+  }
+  .our_restaurant .wrapper {
+    background-image: url(../assets/home-circle-text.png);
+    background-position: 50% 100%;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    margin: auto -15rem;
+  }
+  .our_restaurant .wrapper .restaurant_img {
+    width: 100%;
+  }
+  .our_restaurant .wrapper .restaurant_img .circle_text {
+    display: none;
+  }
+  .our_restaurant .wrapper .restaurant_img p {
+    width: 90%;
+  }
+  .gallery .wrapper {
+    margin-top: 15rem;
+  }
+}
+
+@media (max-width: 940px) and (orientation: landscape) {
+  .close_quotation {
+    padding-top: 16rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-gap: 0;
+  }
+  .vegetarian,
+  .appetizers,
+  .desserts,
+  .drinks,
+  .side_dishes,
+  .salads {
+    grid-column: 1/-1;
+  }
+  .no_display {
+    display: none;
+  }
+  .photo1,
+  .photo2,
+  .photo3 {
+    grid-column: 1/-1;
+  }
+  .hungry_textbox {
+    margin: auto -15rem;
+  }
 }
 
 html {

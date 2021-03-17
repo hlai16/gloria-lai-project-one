@@ -94,3 +94,50 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
 }
+
+// Hungry Clients section
+.hungry_clients .wrapper {
+    background-color: $green;
+    margin-top: -2rem;
+    text-align: center;
+    .hungry_textbox {
+        padding: 10rem;
+        h2 {
+            @include subheading;
+        }
+        .green_accent {
+            @include green_accent(3px);
+        }
+        .quote {
+            display: flex;
+            width: 70%;
+            margin: 5rem auto;
+            p {
+                @include p_font;
+                font-style: italic;
+                margin: auto 2rem;
+            }
+            .quotations {
+                color: $white;
+                font-size: 40px;
+            }
+            .close_quotation {
+                margin-top: calc(40vh - 40%);
+            }
+        }
+        .arrows {
+            font-size: 20px;
+            letter-spacing: 1rem;
+            margin-left: 1rem;
+            a {
+                color: $white;
+            }
+            a:hover,
+            a:active,
+            a:focus-within,
+            a:focus-visible {
+                color: #fff;
+            }
+        }  
+    }
+}
