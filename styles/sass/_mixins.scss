@@ -7,9 +7,9 @@
     letter-spacing: 0.5px;
 }
 
-@mixin p_font($p_size: 14px, $p_lh: 24px) {
+@mixin p_font($p_size: 14px, $p_lh: 24px, $p_t_a: center) {
     font-family: $p_font;
-    text-align: center;
+    text-align: $p_t_a;
     font-size: $p_size;
     line-height: $p_lh;
     letter-spacing: 0.3px;
@@ -44,3 +44,4 @@
     height: $vh;
     background-position: center center;
 }
+

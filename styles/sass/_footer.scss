@@ -1,0 +1,30 @@
+footer .wrapper {
+    background-color: $black2;
+    margin: -2rem auto;
+    .browse {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        padding: 5rem 10rem;
+        margin-left: 4rem;
+        .footer_columns {
+            padding: 3rem;
+            width: 73%;
+        }
+        h2 {
+            @include subheading(25px);
+            color: $deep_green;
+        }
+        p {
+            @include p_font(12px, 22px, left);
+            color: $white;
+        }
+        .column1 p{
+            border-bottom: $footer_bb;
+            padding: 2rem auto;
+        }
+    }
+}
+.copyright {
+    background-color: $black;
+}

@@ -502,6 +502,52 @@ header .wrapper ul li a:focus-within {
   background-image: url(../assets/contact-1.jpeg);
 }
 
+footer .wrapper {
+  background-color: #333333;
+  margin: -2rem auto;
+}
+
+footer .wrapper .browse {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 5rem 10rem;
+  margin-left: 4rem;
+}
+
+footer .wrapper .browse .footer_columns {
+  padding: 3rem;
+  width: 73%;
+}
+
+footer .wrapper .browse h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  color: #64A604;
+}
+
+footer .wrapper .browse p {
+  font-family: "Lora", serif;
+  text-align: left;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #F6F6F6;
+}
+
+footer .wrapper .browse .column1 p {
+  border-bottom: 1px solid #F6F6F6;
+  padding: 2rem auto;
+}
+
+.copyright {
+  background-color: #2E2E2E;
+}
+
 @media (max-width: 940px) {
   .hamburger {
     visibility: visible;
