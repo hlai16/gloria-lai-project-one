@@ -1,5 +1,3 @@
-@import "variables";
-@import "mixins";
 
 // Header
 .home_header {
@@ -33,15 +31,16 @@
         }
     }
     .menu {
+        background-color: $white;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-gap: 2.5rem 5rem;
-        margin: 8.5rem 6rem;
-        padding-right: 5rem;
+        padding: 7.5rem 6rem 5rem;
         .menu_div {
             display: grid;
             grid-template-columns: 10% 88%;
             grid-gap: 2rem;
+            padding-right: 5rem;
             span {
                 font-size: 30px;
             }
@@ -55,5 +54,37 @@
                 }
             }
         }
+    }
+}
+
+// Our Restaurants section
+.our_restaurant .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15rem;
+    .restaurant_img {
+        position: relative;
+        margin-top: 5rem;
+        width: 40%;
+        .circle_text{
+            position: absolute;
+            width: 30%;
+            top: calc(100% - 35rem);
+            right: calc(100% - 55rem);
+        }
+    }
+    h2 {
+        @include subheading;
+        margin-top: 5rem;
+    }
+    .green_accent {
+        @include green_accent;
+        margin-bottom: 5rem;
+    }
+    p{
+        @include p_font;
+        width: 66%;
     }
 }

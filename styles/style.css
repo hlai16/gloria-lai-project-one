@@ -220,6 +220,22 @@ template {
   .home_main .wrapper .menu {
     grid-column: 1/-1;
   }
+  .our_restaurant .wrapper {
+    background-image: url(../assets/home-circle-text.png);
+    background-position: 50% 100%;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    margin: auto -15rem;
+  }
+  .our_restaurant .wrapper .restaurant_img {
+    width: 100%;
+  }
+  .our_restaurant .wrapper .restaurant_img .circle_text {
+    display: none;
+  }
+  .our_restaurant .wrapper .restaurant_img p {
+    width: 90%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -318,8 +334,8 @@ header .wrapper ul li a:focus-within {
 }
 
 .home_main .wrapper .m_p_e .green_accent {
-  width: 10%;
-  height: 0.75%;
+  width: 60px;
+  height: 5px;
   background-color: #64A604;
   color: transparent;
   margin: auto 45%;
@@ -349,13 +365,13 @@ header .wrapper ul li a:focus-within {
 }
 
 .home_main .wrapper .menu {
+  background-color: #F6F6F6;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   grid-gap: 2.5rem 5rem;
-  margin: 8.5rem 6rem;
-  padding-right: 5rem;
+  padding: 7.5rem 6rem 5rem;
 }
 
 .home_main .wrapper .menu .menu_div {
@@ -364,6 +380,7 @@ header .wrapper ul li a:focus-within {
   -ms-grid-columns: 10% 88%;
       grid-template-columns: 10% 88%;
   grid-gap: 2rem;
+  padding-right: 5rem;
 }
 
 .home_main .wrapper .menu .menu_div span {
@@ -387,6 +404,62 @@ header .wrapper ul li a:focus-within {
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.3px;
+}
+
+.our_restaurant .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15rem;
+}
+
+.our_restaurant .wrapper .restaurant_img {
+  position: relative;
+  margin-top: 5rem;
+  width: 40%;
+}
+
+.our_restaurant .wrapper .restaurant_img .circle_text {
+  position: absolute;
+  width: 30%;
+  top: calc(100% - 35rem);
+  right: calc(100% - 55rem);
+}
+
+.our_restaurant .wrapper h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  margin-top: 5rem;
+}
+
+.our_restaurant .wrapper .green_accent {
+  width: 60px;
+  height: 5px;
+  background-color: #64A604;
+  color: transparent;
+  margin: auto 45%;
+  margin-bottom: 5rem;
+}
+
+.our_restaurant .wrapper p {
+  font-family: "Lora", serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  width: 66%;
 }
 
 .blog_header {

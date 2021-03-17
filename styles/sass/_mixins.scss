@@ -16,9 +16,9 @@
 }
 
 // Green Accent Line
-@mixin green_accent {
-    width: 10%;
-    height: 0.75%;
+@mixin green_accent($green_accent_height: 5px) {
+    width: 60px;
+    height: $green_accent_height;
     background-color: $deep_green;
     color: transparent;
     margin: auto 45%;
