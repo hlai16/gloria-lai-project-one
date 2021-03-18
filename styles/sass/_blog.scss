@@ -1,6 +1,83 @@
+// layout
 
+.blog_wrapper {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+// header
 
 .blog_header {
     @include hero_image;
     background-image: url(../assets/blog-1.jpeg);
+}
+
+// Main: blogpost
+
+.blog_post {
+    margin: 10rem auto 5rem;
+    h2{
+        @include subheading(20px, 14px);
+    }
+    p {
+        @include p_font($p_t_a: left);
+        height: 45%;
+        margin: 2.5rem auto;
+    }
+    .blog_date {
+        @include subheading(10px, 14px);
+        margin: -1rem auto 2rem;
+    }
+}
+
+// Main: tags and share
+
+.tags_share {
+    margin-bottom: 5rem;
+    height: 8rem;
+    @include bt_bb;
+    nav {
+        display: flex;
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    @include p_font($p_lh: 14px, $p_ls: 1px);
+                    color: $brown_grey;
+                    margin: auto 1.2rem;
+                }
+                a:hover,
+                a:active,
+                a:focus-within {
+                    color: $black2;
+                }
+            }
+        }
+        .p_heading {
+            @include subheading(14px, 24px, .6px);
+        }
+    }  
+}
+
+// Main: About Author
+.author {
+    display: flex;
+    margin-bottom: 10rem;
+    justify-content: space-between;
+    .author_img {
+        width: 25%;
+        padding-right: 5rem;
+    }
+    .author_about {
+        background-color: $white;
+        padding: 4rem;
+        h3{
+            @include subheading(15px, 14px);
+        }
+        p {
+            @include p_font($p_t_a: left);
+        }
+    }
 }

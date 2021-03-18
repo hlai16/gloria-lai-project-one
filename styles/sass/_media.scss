@@ -9,8 +9,6 @@
             visibility: hidden;
         }
     }
-    
-    
     // Home Main
     .home_main .wrapper{
         grid-template-columns: 100%;
@@ -42,6 +40,11 @@
     // Gallery section
     .gallery .wrapper {
         margin-top: 15rem;
+    }
+    // BLOG
+    // Main: About Author
+    .author {
+        flex-direction: column;
     }
     // Footer
     .browse {
@@ -95,6 +98,20 @@
     // Hungry Clients section
     .hungry_textbox {
         margin: -5rem -15rem;
+    }
+    // BLOG
+    // Main: Author
+    .tags_share {
+        border-bottom: none;
+        nav {
+            ul {
+                flex-direction: column;
+                justify-content: space-between;
+                li {
+                    margin: 3.5px auto;
+                }
+             }  
+        }
     }
     // Footer
     .browse {

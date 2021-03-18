@@ -1,18 +1,19 @@
 
 // Font mixins:
-@mixin subheading($subheading_size: 18px, $subheading_lh: 36px) {
+@mixin subheading($subheading_size: 18px, $subheading_lh: 36px, $subheading_ls: 0.5px) {
     font-family: $heading_font;
     font-size: $subheading_size;
     line-height: $subheading_lh;
-    letter-spacing: 0.5px;
+    letter-spacing: $subheading_ls;
+    text-transform: uppercase;
 }
 
-@mixin p_font($p_size: 14px, $p_lh: 24px, $p_t_a: center) {
+@mixin p_font($p_size: 14px, $p_lh: 24px, $p_t_a: center, $p_ls: 0.3px) {
     font-family: $p_font;
     text-align: $p_t_a;
     font-size: $p_size;
     line-height: $p_lh;
-    letter-spacing: 0.3px;
+    letter-spacing: $p_ls;
 }
 
 // Green Accent Line
@@ -43,5 +44,12 @@
     background-size: cover;
     height: $vh;
     background-position: center center;
+}
+
+// BLOG
+// Borders:
+@mixin bt_bb {
+    border-bottom: 1px solid #99999975;
+    border-top: 1px solid #99999975;
 }
 
