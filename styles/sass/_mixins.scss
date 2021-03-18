@@ -25,11 +25,11 @@
 }
 
 // Button
-@mixin button {
+@mixin button($p_l_r: 3rem){
     background-color: $deep_green;
     color: #fff;
     border: none;
-    padding: 1rem 3rem;
+    padding: 1rem $p_l_r;
     font-family: $heading_font;
 }
 @mixin button_hover {

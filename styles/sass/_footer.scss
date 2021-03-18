@@ -23,8 +23,71 @@ footer .wrapper {
             border-bottom: $footer_bb;
             padding: 2rem auto;
         }
+        h3 {
+            @include subheading(16px);
+            color: #fff;
+        }
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                @include p_font(12px, 30px, left);
+                color: $white;
+                margin-left: -3.6rem;
+            }
+        }
+        .column2 a{
+            border-bottom: $footer_bb;
+        }
+        .subscribe {
+            display: flex;
+            margin: 2.5rem auto;
+            input {
+                width: 70%;
+                height: 30px;
+                background-color: $brown_grey;
+                border: none;
+                @include p_font(14px, 30px, left);
+                color: #fff;
+                padding: 10px;
+            }
+            button {
+                @include button(2rem);
+            }
+            button:hover,
+            button:active,
+            button:focus-within {
+                @include button_hover;
+            }
+        } 
+        .socialmedia {
+            width: 45%;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                a {
+                    font-size: 18px;
+                }
+                a:hover,
+                a:active,
+                a:focus-within {
+                    color: $green;
+                }
+            }
+        }      
     }
 }
 .copyright {
     background-color: $black;
+    padding: 0.5rem 15rem;
+    p {
+        @include p_font(12px, 30px, left);
+        color: $white;
+        span {
+            color: $deep_green;
+            font-family: $heading_font;
+            text-transform: uppercase;
+        }
+    }
 }

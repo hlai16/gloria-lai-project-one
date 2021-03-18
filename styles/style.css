@@ -540,12 +540,117 @@ footer .wrapper .browse p {
 }
 
 footer .wrapper .browse .column1 p {
-  border-bottom: 1px solid #F6F6F6;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.493);
   padding: 2rem auto;
+}
+
+footer .wrapper .browse h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+footer .wrapper .browse li {
+  list-style: none;
+}
+
+footer .wrapper .browse li a {
+  text-decoration: none;
+  font-family: "Lora", serif;
+  text-align: left;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #F6F6F6;
+  margin-left: -3.6rem;
+}
+
+footer .wrapper .browse .column2 a {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.493);
+}
+
+footer .wrapper .browse .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.5rem auto;
+}
+
+footer .wrapper .browse .subscribe input {
+  width: 70%;
+  height: 30px;
+  background-color: #999999;
+  border: none;
+  font-family: "Lora", serif;
+  text-align: left;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #fff;
+  padding: 10px;
+}
+
+footer .wrapper .browse .subscribe button {
+  background-color: #64A604;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+footer .wrapper .browse .subscribe button:hover,
+footer .wrapper .browse .subscribe button:active,
+footer .wrapper .browse .subscribe button:focus-within {
+  background-color: #DDED9A;
+  color: #000;
+}
+
+footer .wrapper .browse .socialmedia {
+  width: 45%;
+}
+
+footer .wrapper .browse .socialmedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .wrapper .browse .socialmedia ul a {
+  font-size: 18px;
+}
+
+footer .wrapper .browse .socialmedia ul a:hover,
+footer .wrapper .browse .socialmedia ul a:active,
+footer .wrapper .browse .socialmedia ul a:focus-within {
+  color: #DDED9A;
 }
 
 .copyright {
   background-color: #2E2E2E;
+  padding: 0.5rem 15rem;
+}
+
+.copyright p {
+  font-family: "Lora", serif;
+  text-align: left;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #F6F6F6;
+}
+
+.copyright p span {
+  color: #64A604;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
 }
 
 @media (max-width: 940px) {
