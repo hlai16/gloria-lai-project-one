@@ -564,7 +564,7 @@ footer .wrapper .browse li a {
   line-height: 30px;
   letter-spacing: 0.3px;
   color: #F6F6F6;
-  margin-left: -3.6rem;
+  margin: 2rem auto 2rem -3.6rem;
 }
 
 footer .wrapper .browse .column2 a {
@@ -654,10 +654,10 @@ footer .wrapper .browse .socialmedia ul a:focus-within {
 }
 
 @media (max-width: 940px) {
-  .hamburger {
+  header nav .hamburger {
     visibility: visible;
   }
-  nav ul {
+  header nav ul {
     visibility: hidden;
   }
   .home_main .wrapper {
@@ -690,6 +690,13 @@ footer .wrapper .browse .socialmedia ul a:focus-within {
   .gallery .wrapper {
     margin-top: 15rem;
   }
+  .browse {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .browse .footer_columns {
+    grid-column: 1/-1;
+  }
 }
 
 @media (max-width: 940px) and (orientation: landscape) {
@@ -721,7 +728,19 @@ footer .wrapper .browse .socialmedia ul a:focus-within {
     grid-column: 1/-1;
   }
   .hungry_textbox {
-    margin: auto -15rem;
+    margin: -5rem -15rem;
+  }
+  .browse {
+    margin: 5rem -10rem;
+  }
+  .browse .footer_columns {
+    margin: auto -5.5rem;
+  }
+  .browse .footer_columns .socialmedia a {
+    margin: auto 2rem;
+  }
+  .copyright {
+    margin: auto -12rem;
   }
 }
 

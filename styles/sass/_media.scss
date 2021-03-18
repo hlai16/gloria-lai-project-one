@@ -1,12 +1,16 @@
 // Portrait tablet and small desktops
 @media (max-width: 940px) {
     // header
-    .hamburger {
-        visibility: visible;
+    header nav {
+        .hamburger {
+            visibility: visible;
+        }
+        ul{
+            visibility: hidden;
+        }
     }
-    nav ul{
-        visibility: hidden;
-    }
+    
+    
     // Home Main
     .home_main .wrapper{
         grid-template-columns: 100%;
@@ -39,7 +43,18 @@
     .gallery .wrapper {
         margin-top: 15rem;
     }
+    // Footer
+    .browse {
+        grid-template-columns: 100%;
+        .footer_columns {
+            grid-column: 1/-1;
+        }
+    }
 }
+
+
+
+
 
 // landscape view from 940px to less
 @media (max-width: 940px) and (orientation: landscape) {
@@ -48,6 +63,10 @@
         padding-top: 16rem;
     }
 }
+
+
+
+
 // portrait size from 480px less
 @media (max-width: 480px) {
     // Home Main
@@ -75,6 +94,19 @@
 
     // Hungry Clients section
     .hungry_textbox {
-        margin: auto -15rem;
+        margin: -5rem -15rem;
+    }
+    // Footer
+    .browse {
+        margin: 5rem -10rem;
+        .footer_columns {
+            margin: auto -5.5rem;
+            .socialmedia a {
+                margin: auto 2rem;
+            }
+        }
+    }
+    .copyright {
+        margin: auto -12rem;
     }
 }
