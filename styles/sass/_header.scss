@@ -10,25 +10,30 @@ header .wrapper {
     color: #000;
     margin: 2rem;
   }
-  nav .hamburger {
-    visibility: collapse;
-  }
-  ul {
-    display: flex;
-    justify-content: space-between;
-    margin: 1.2rem;
-    li {
-      list-style: none;
-      a {
-        text-decoration: none;
-        margin: 0 1.25rem;
-        @include subheading(15px);
-        color: #000;
-      }
-      a:hover,
-      a:active,
-      a:focus-within {
-          color: $deep_green;
+  nav {
+    margin: 2rem;
+    .icon {
+      font-size: 20px;
+      margin: auto 3rem;
+    }
+    
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.2rem;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          margin: 0 1.25rem;
+          @include subheading(15px);
+          color: #000;
+        }
+        a:hover,
+        a:active,
+        a:focus-within {
+            color: $deep_green;
+        }
       }
     }
   }
