@@ -3,6 +3,10 @@
     // header
     header nav {
         position: relative;
+        margin: 2rem;
+        .show {
+            display: block;
+        }
         .my_links{
             flex-direction: column;
             background-color: $white;
@@ -10,11 +14,12 @@
             left: -12rem;
         }
         .hidden {
-            display: none;
+            visibility: collapse;
         }
-        .show {
-            display: block;
-        }
+        .icon {
+            font-size: 20px;
+            margin: auto 3rem;
+     }
     }
 
     // Home Main

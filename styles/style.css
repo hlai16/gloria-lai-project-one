@@ -220,15 +220,6 @@ header .wrapper h1 {
   margin: 2rem;
 }
 
-header .wrapper nav {
-  margin: 2rem;
-}
-
-header .wrapper nav .icon {
-  font-size: 20px;
-  margin: auto 3rem;
-}
-
 header .wrapper nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -794,6 +785,10 @@ footer .wrapper .browse .socialmedia ul a:focus-within {
 @media (max-width: 940px) {
   header nav {
     position: relative;
+    margin: 2rem;
+  }
+  header nav .show {
+    display: block;
   }
   header nav .my_links {
     -webkit-box-orient: vertical;
@@ -805,10 +800,11 @@ footer .wrapper .browse .socialmedia ul a:focus-within {
     left: -12rem;
   }
   header nav .hidden {
-    display: none;
+    visibility: collapse;
   }
-  header nav .show {
-    display: block;
+  header nav .icon {
+    font-size: 20px;
+    margin: auto 3rem;
   }
   .home_main .wrapper {
     -ms-grid-columns: 100%;

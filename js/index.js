@@ -1,15 +1,16 @@
 
-function menu() {
-    const ul = document.getElementByClass('.my_links');
+
+// credit to: https://stackoverflow.com/questions/53539461/how-do-i-use-vanilla-javascript-to-write-a-toggle-function-i-wrote-in-jquery
+const menuShow = function menu() {
+    const ul = document.querySelector('.my_links');
     ul.classList.toggle('hidden');
-    // ul.classList.toggle('show');
   }
 
 const icon = document.querySelector('.icon');
 
-const hamburgerOn = icon.addEventListener('click', function(e){
+const hamburgerOn = icon.addEventListener('click', (e) => {
     e.preventDefault();
-    menu();
+    menuShow();
 });
 
 hamburgerOn();
